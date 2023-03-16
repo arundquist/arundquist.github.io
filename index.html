@@ -6,7 +6,7 @@ Hello world
 
 {{site.description}}
 
-{% assign doclist = site.static_files | sort: 'modified_time'  %}
+{% assign doclist = site.static_files | sort: 'modified_time' | reverse  %}
     <ul>
        {% for doc in doclist %}
             {% if doc.name contains '.html' %}
